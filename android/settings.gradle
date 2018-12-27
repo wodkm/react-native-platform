@@ -1,0 +1,3 @@
+rootProject.name = 'Platform'
+
+include ':app'
