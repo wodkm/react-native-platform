@@ -1,0 +1,168 @@
+{
+	"CODE": "0",
+	"DATA": [
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180509",
+			"NOTICECONTENT": "123312312",
+			"NOTICEID": "184",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "测试公告测试公告测试公告测试公告测试公告测试公告测试公告测试公告测试公告测试公告测试公告",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180509",
+			"NOTICECONTENT": "123312312",
+			"NOTICEID": "184",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "测试公告",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180427",
+			"NOTICECONTENT": "flc测试已读B",
+			"NOTICEID": "181",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "flc测试已读B",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180427",
+			"NOTICECONTENT": "flc测试已读A",
+			"NOTICEID": "180",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "flc测试已读A",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180427",
+			"NOTICECONTENT": "测试一下多个附件",
+			"NOTICEID": "179",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "flc测试多个附件",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180427",
+			"NOTICECONTENT": "flc测试已读C",
+			"NOTICEID": "182",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "flc测试已读C",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180427",
+			"NOTICECONTENT": "flc测试已读A",
+			"NOTICEID": "180",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "flc测试已读A",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180427",
+			"NOTICECONTENT": "flc测试已读D",
+			"NOTICEID": "183",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "flc测试已读D",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "在保险公司运营过程中，由于各种原因导致的风险时有发生，监管机构只能采取事前审核或者事后约束的措施。但随着保险业务的前端日益开放，参与保险市场的企业越来越多元化，事中监督的需求日益凸显。而笔者看来，区块链技术正是进行事中监督的有效技术手段之一。只要保险公司将日常运营流程搬到区块链上，并向监管机构开发一个记账节点（即使是一个只读的记账节点），监管机构就可以实时的观察到保险公司的全部业务动向。例如资金流向和投资构成、产品的承保和赔付数据、主要的人事和管理操作等，无需等到保险公司事后申报，从而及时发现可能存在的业务风险和违规操作。\r\n\r\n在此基础上，监管机构还可以利用大数据技术，对全国的保险市场进行分析和预测，及时发现和预防可能存在的系统性风险，或是发现潜在的保障需求和趋势，从而更好地为老百姓提供保障。\r\n\r\n除了通过改变数据存储方式来减少保险公司在承保和监督方面的风险，区块链技术还激活了很多传统的保障模式，例如相互保险，以及很多新的保障需求，例如临时动态保单。随着科技和保险行业的交流和碰撞日益加深，相信还会有更多新的应用和公司出现。",
+			"NOTICEID": "177",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "公告测试7",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "区块链体系结构的核心优势包括： \r\n\r\n任何节点都可以创建交易，在经过一段时间的确认之后，就可以合理地确认该交易是否为有效，区块链可有效地防止双方问题的发生。 \r\n对于试图重写或者修改交易记录而言，它的成本是非常高的。 \r\n区块链实现了两种记录：交易（transactions）以及区块（blocks）。交易是被存储在区块链上的实际数据，而区块则是记录确认某些交易是在何时，以及以何种顺序成为区块链数据库的一部分。交易是由参与者在正常过程中使用系统所创建的（在加密数字货币的例子中，一笔交易是由bob将代币发送给alice所创建的），而区块则是由我们称之为矿工（miners）的单位负责创建。",
+			"NOTICEID": "175",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "公告测试6",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "该概念在中本聪的白皮书中提出，中本聪创造第一个区块，即“创世区块”。\r\n\r\n2009年1月3日，比特币的创始人中本聪在创世区块里留下一句永不可修改的话：\r\n\r\n“The Times 03/Jan/2009 Chancellor on brink of second bailout for banks（2009年1月3日，财政大臣正处于实施第二轮银行紧急援助的边缘）。”\r\n\r\n当时正是英国的财政大臣达林被迫考虑第二次出手纾解银行危机的时刻，这句话是泰晤士报当天的头版文章标题。\r\n\r\n区块链的时间戳服务和存在证明，第一个区块链产生的时间和当时正发生的事件被永久性的保留了下来。\r\n\r\n比特币公司BTCC于2015年推出了一项服务“千年之链”即区块链刻字服务，就是采用的以上原理。用户可以将通过这项服务将文字刻在区块链上，永久保存。",
+			"NOTICEID": "173",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "公告测试4",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "一般说来，区块链系统由数据层、网络层、共识层、激励层、合约层和应用层组成。 \r\n\r\n数据层封装了底层数据区块以及相关的数据加密和时间戳等技术；\r\n网络层则包括分布式组网机制、数据传播机制和数据验证机制等；\r\n共识层主要封装网络节点的各类共识算法；\r\n激励层将经济因素集成到区块链技术体系中来，主要包括经济激励的发行机制和分配机制等；\r\n合约层主要封装各类脚本、算法和智能合约，是区块链可编程特性的基础；\r\n应用层则封装了区块链的各种应用场景和案例。\r\n该模型中，基于时间戳的链式区块结构、分布式节点的共识机制、基于共识算力的经济激励和灵活可编程的智能合约是区块链技术最具代表性的创新点。[2]",
+			"NOTICEID": "172",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "公告测试3",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "狭义来讲，区块链是一种按照时间顺序将数据区块以顺序相连的方式组合成的一种链式数据结构， 并以密码学方式保证的不可篡改和不可伪造的分布式账本。\r\n\r\n广义来讲，区块链技术是利用块链式数据结构来验证与存储数据、利用分布式节点共识算法来生成和更新数据、利用密码学的方式保证数据传输和访问的安全、利用由自动化脚本代码组成的智能合约来编程和操作数据的一种全新的分布式基础架构与计算方式。",
+			"NOTICEID": "171",
+			"NOTICEIMGURL": "http://qixin.concher.cn/data01/qixin/RSF//app/images/b18ba45c815143e4848b248bbf995fa9.jpg",
+			"NOTICETITLE": "公告测试2",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "1、为营造一个干净舒适的办公环境，维持正常的工作秩序，即日起针对办公区域做出以上值日安排；\r\n2、值日时间为每天早上8:30，各员工按以上负责区域进行值日，负责区域每月轮换一次，要做到每日一小扫，每周一大扫，形成制度，坚持长久。\r\n二、值日范围及要求\r\n1、打扫区域：包括公共办公区域、会议室、总经理办公室、库房、前台、过道等要坚持每日清扫，要求地面清洁，桌椅物品摆放整齐，表面干净无灰尘；\r\n2、各种用具要存放整齐有序，不要在室内随意丢弃纸屑等杂物；\r\n3、各员工办公桌、垃圾由个人自行负责清理；无人办公桌面由值日人员负责整理；\r\n4、当天值日人员下班时要负责关好门窗，关掉所有电源或由最后离开人员执行。\r\n",
+			"NOTICEID": "170",
+			"NOTICEIMGURL": "http://qixin.concher.cn/data01/qixin/RSF//app/images/fa297d003c9848bd8400afcc9065479e.jpg",
+			"NOTICETITLE": "公告测试1",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "狭义来讲，区块链是一种按照时间顺序将数据区块以顺序相连的方式组合成的一种链式数据结构， 并以密码学方式保证的不可篡改和不可伪造的分布式账本。\r\n\r\n广义来讲，区块链技术是利用块链式数据结构来验证与存储数据、利用分布式节点共识算法来生成和更新数据、利用密码学的方式保证数据传输和访问的安全、利用由自动化脚本代码组成的智能合约来编程和操作数据的一种全新的分布式基础架构与计算方式。",
+			"NOTICEID": "171",
+			"NOTICEIMGURL": "http://qixin.concher.cn/data01/qixin/RSF//app/images/b18ba45c815143e4848b248bbf995fa9.jpg",
+			"NOTICETITLE": "公告测试2",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180423",
+			"NOTICECONTENT": "区块链诞生自中本聪的比特币，自2009年以来，出现了各种各样的类比特币的数字货币，都是基于公有区块链的。\r\n\r\n数字货币的现状是百花齐放，列出一些常见的：bitcoin、litecoin、dogecoin、OKcoinetc，除了货币的应用之外，还有各种衍生应用，如NXT，SIA，比特股，MaidSafe，Ripple，Ethereum等等。\r\n\r\n2016年1月20日，中国人民银行数字货币研讨会宣布对数字货币研究取得阶段性成果。会议肯定了数字货币在降低传统货币发行等方面的价值，并表示央行在探索发行数字货币。\r\n\r\n可以用区块链的一些领域可以是：\r\n\r\n▪ 智能合约\r\n\r\n▪ 证券交易\r\n\r\n▪ 电子商务\r\n\r\n▪ 物联网\r\n\r\n▪ 社交通讯\r\n\r\n▪ 文件存储\r\n\r\n▪ 存在性证明\r\n\r\n▪ 身份验证\r\n\r\n▪ 股权众筹\r\n\r\n可以把区块链的发展类比互联网本身的发展，未来会在internet上形成一个比如叫做finance-internet的东西，而这个东西就是基于区块链，它的前驱就是bitcoin，即传统金融从私有链、行业链出发（局域网），bitcoin系列从公有链（广域网）出发，都表达了同一种概念——数字资产（DigitalAsset），最终向一个中间平衡点收敛。\r\n\r\n",
+			"NOTICEID": "174",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "公告测试5",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180417",
+			"NOTICECONTENT": "11111",
+			"NOTICEID": "168",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "11111",
+			"PUBLISHER": "appfly"
+		},
+		{
+			"ANNOUNCEMENTSTATE": "1",
+			"LASTUPDATETIME": "20180417",
+			"NOTICECONTENT": "11111",
+			"NOTICEID": "168",
+			"NOTICEIMGURL": "http://qixin.concher.cn",
+			"NOTICETITLE": "11111",
+			"PUBLISHER": "appfly"
+		}
+	],
+	"MESSAGE": ""
+}
