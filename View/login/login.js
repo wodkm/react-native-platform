@@ -85,53 +85,53 @@ export default class extends Component {
         //处理app版本更新
         let oldAppVersionStr = DeviceInfo.getVersion();
         let deviceType = Platform.OS == "ios" ? 1 : 0;
-        fetch(config.appPath + `/mp/version/check?appVersionStr=${oldAppVersionStr}&deviceType=${deviceType}`, {
-            method: 'post',
-        }).then(response => {
-            return response.json();
-        }).then(response => {
-            if (response.status == '0') {
-                for (const item of response.data) {
-                    if (item.needUpdate == '1') {
-                        Alert.alert(
-                            '发现新版本',
-                            '请更新版本', [{
-                                text: '立即更新',
-                                onPress: () => {
-                                    Platform.OS == "ios" ? NativeModules.AppVersionUpdate.update(item.plistFile) : NativeModules.AppVersionUpdate.updateWithNotification(item.fileUrl);
-                                }
-                            },
-                            ], {
-                                cancelable: false
-                            }
-                        )
-                        return;
-                    }
-                }
-                if (response.data.length > 0) {
-                    let item = response.data[0];
-                    Alert.alert(
-                        '发现新版本',
-                        '有新版本需要更新', [{
-                            text: '确认',
-                            onPress: () => {
-                                Platform.OS == "ios" ? NativeModules.AppVersionUpdate.update(item.plistFile) : NativeModules.AppVersionUpdate.updateWithNotification(item.fileUrl);
-                            }
-                        }, {
-                            text: '取消',
-                            onPress: () => console.log('Cancel Pressed'),
-                            style: 'cancel'
-                        },
+        // fetch(config.appPath + `/mp/version/check?appVersionStr=${oldAppVersionStr}&deviceType=${deviceType}`, {
+        //     method: 'post',
+        // }).then(response => {
+        //     return response.json();
+        // }).then(response => {
+        //     if (response.status == '0') {
+        //         for (const item of response.data) {
+        //             if (item.needUpdate == '1') {
+        //                 Alert.alert(
+        //                     '发现新版本',
+        //                     '请更新版本', [{
+        //                         text: '立即更新',
+        //                         onPress: () => {
+        //                             Platform.OS == "ios" ? NativeModules.AppVersionUpdate.update(item.plistFile) : NativeModules.AppVersionUpdate.updateWithNotification(item.fileUrl);
+        //                         }
+        //                     },
+        //                     ], {
+        //                         cancelable: false
+        //                     }
+        //                 )
+        //                 return;
+        //             }
+        //         }
+        //         if (response.data.length > 0) {
+        //             let item = response.data[0];
+        //             Alert.alert(
+        //                 '发现新版本',
+        //                 '有新版本需要更新', [{
+        //                     text: '确认',
+        //                     onPress: () => {
+        //                         Platform.OS == "ios" ? NativeModules.AppVersionUpdate.update(item.plistFile) : NativeModules.AppVersionUpdate.updateWithNotification(item.fileUrl);
+        //                     }
+        //                 }, {
+        //                     text: '取消',
+        //                     onPress: () => console.log('Cancel Pressed'),
+        //                     style: 'cancel'
+        //                 },
 
-                        ], {
-                            cancelable: false
-                        }
-                    )
-                }
-            }
-        }).catch(error => {
-            // alert(error);
-        })
+        //                 ], {
+        //                     cancelable: false
+        //                 }
+        //             )
+        //         }
+        //     }
+        // }).catch(error => {
+        //     // alert(error);
+        // })
 
         Platform.OS == "ios" ? (SplashScreen.hide()) : null;//取消白屏
 
@@ -329,9 +329,7 @@ export default class extends Component {
                                             style={{ width: 24, height: 24 }}
                                         />
                                     ),
-                                headerRight: (
-                                    <View></View>
-                                )
+                                header: null,
                             },
                         }
                         tabs['1'] = {
@@ -347,9 +345,7 @@ export default class extends Component {
                                             style={{ width: 24, height: 24 }}
                                         />
                                     ),
-                                headerRight: (
-                                    <View></View>
-                                )
+                                header: null,
                             },
                         }
                         tabs['2'] = {
@@ -365,9 +361,7 @@ export default class extends Component {
                                             style={{ width: 24, height: 24 }}
                                         />
                                     ),
-                                headerRight: (
-                                    <View></View>
-                                )
+                                header: null,
                             },
                         }
                         tabs['3'] = {
@@ -383,9 +377,7 @@ export default class extends Component {
                                             style={{ width: 24, height: 24 }}
                                         />
                                     ),
-                                headerRight: (
-                                    <View></View>
-                                )
+                                header: null,
                             },
                         }
                         // responseBody.data ? responseBody.data.map((item, index) => {

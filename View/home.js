@@ -9,11 +9,13 @@ import {
     Platform,
     NativeModules,
     DeviceEventEmitter,
+    StatusBar,
 } from 'react-native';
 import moment from 'moment';
 import pinyin from 'pinyin';
 import styleSheet from '@style/home.style';
 import config from '@const/config';
+import topBar from '@style/topBar.style';
 
 export default class Home extends Component {
 
@@ -138,21 +140,23 @@ export default class Home extends Component {
                 if (resp.status == '404') throw new Error('Page not found:' + resp.url);
                 if (resp.status == '500') throw new Error(resp.status + ' ' + resp.url);
             }).then(data => {
-                global.storage.save({
-                    key: 'location',
-                    data: {
-                        city: data.regeocode.addressComponent.city.length ? data.regeocode.addressComponent.city : data.regeocode.addressComponent.province,
-                        adcode: data.regeocode.addressComponent.adcode,
-                        district: data.regeocode.addressComponent.district,
-                        towncode: data.regeocode.addressComponent.towncode,
-                        formattedAddress: data.regeocode.formatted_address,
-                        locations: locations,
-                        province: data.regeocode.addressComponent.province,
-                        time: new Date().getTime(),
-                    },
-                    expires: null
-                });
-                this.getWeather();
+                if (data.status != 0) {
+                    global.storage.save({
+                        key: 'location',
+                        data: {
+                            city: data.regeocode.addressComponent && data.regeocode.addressComponent.city.length ? data.regeocode.addressComponent.city : data.regeocode.addressComponent.province,
+                            adcode: data.regeocode.addressComponent.adcode,
+                            district: data.regeocode.addressComponent.district,
+                            towncode: data.regeocode.addressComponent.towncode,
+                            formattedAddress: data.regeocode.formatted_address,
+                            locations: locations,
+                            province: data.regeocode.addressComponent.province,
+                            time: new Date().getTime(),
+                        },
+                        expires: null
+                    });
+                    this.getWeather();
+                }
             }).catch((err) => {
                 console.error(err.message);
             });
@@ -284,6 +288,7 @@ export default class Home extends Component {
         const date = new Date();
         return (
             <View>
+                <StatusBar backgroundColor={"transparent"} translucent={true} />
                 <View>
                     <ImageBackground
                         source={require('@image/home/bgnew.png')}

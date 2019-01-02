@@ -5,11 +5,12 @@ import {
     Image,
 } from 'react-native';
 import {
-    StackNavigator,
-    TabNavigator,
     TabBarBottom,
+    createBottomTabNavigator,
+    createAppContainer,
+    createStackNavigator,
 } from 'react-navigation';
-import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
+// import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
 import Work from '@view/work';
 import UserSettings from '@view/userSettings/userSettings';
 import SettingDetails from '@view/userSettings/settingDetails';
@@ -54,7 +55,7 @@ export default class Stack extends Component {
 
         this.state = {
             chosenTab: 'work',
-            Tab: TabNavigator({
+            Tab: createBottomTabNavigator({
                 '-1': {
                     screen: Work,
                     navigationOptions: {
@@ -92,10 +93,9 @@ export default class Stack extends Component {
     }
 
     initTab() {
-        let Tab = TabNavigator(this.state.tabs, {
+        let Tab = createBottomTabNavigator(this.state.tabs, {
             tabBarPosition: 'bottom',
             animationEnabled: false,
-            tabBarComponent: TabBarBottom,
             tabBarOptions: {
                 activeTintColor: config.topicColor,
                 inactiveTintColor: '#cdcdcd',
@@ -106,7 +106,7 @@ export default class Stack extends Component {
                 labelStyle: {
                     fontSize: 12, // 文字大小  
                 },
-            }
+            },
         });
 
         this.setState({
@@ -130,18 +130,35 @@ export default class Stack extends Component {
         navigation,
         screenProps
     }) => {
-        let themeColor = navigation.state.params && navigation.state.params.themeColor ? navigation.state.params.themeColor : '#ff6600';
         return ({
             header: null,
             gesturesEnabled: false,
-            headerStyle: {
-                backgroundColor: global.themeColor ? global.themeColor : config.theme.default.backgroundcolor,
-            },
         });
     }
 
     render() {
-        let Stack = StackNavigator({
+        let Tab = createAppContainer(this.state.Tab);
+        class Tabs extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+
+            static navigationOptions = ({
+                navigation,
+                screenProps
+            }) => {
+                return ({
+                    header: null,
+                    gesturesEnabled: false,
+                });
+            }
+
+            render() {
+                return <Tab />;
+            }
+        }
+
+        let Stack = createAppContainer(createStackNavigator({
             clock: {
                 screen: Clock
             },
@@ -158,7 +175,7 @@ export default class Stack extends Component {
                 screen: Work
             },
             Tab: {
-                screen: this.state.Tab
+                screen: Tabs
             },
             userSettings: {
                 screen: UserSettings
@@ -225,42 +242,10 @@ export default class Stack extends Component {
                 initialRouteParams: {
                     isAttendanceGroupManager: false
                 },
-                transitionConfig: () => ({
-                    screenInterpolator: CardStackStyleInterpolator.forHorizontal,
-                }),
-                navigationOptions: ({
-                    navigation,
-                    screenProps
-                }) => {
-                    let themeColor = navigation.state.params && navigation.state.params.themeColor ? navigation.state.params.themeColor : '#ff6600';
-                    return ({
-                        cardStack: {
-                            gesturesEnabled: true
-                        },
-                        headerTitleStyle: {
-                            color: 'white',
-                            alignSelf: 'center',
-                            fontSize: vm * .044
-                        },
-                    })
+                navigationOptions: {
+                    header: null,
                 }
-                // navigationOptions: {
-                //     cardStack: {
-                //         gesturesEnabled: true
-                //     },
-                //     headerStyle: {
-                //         height: currentHeight * .06,
-                //         elevation: 0,
-                //         shadowOpacity: 0,
-                //         backgroundColor: '#ff6600'
-                //     },
-                //     headerTitleStyle: {
-                //         color: 'white',
-                //         alignSelf: 'center',
-                //         fontSize: vm * .044
-                //     },
-                // },
-            });
+            }));
         return (
             <Stack screenProps={{ toLogin: this.props.navigation.popToTop }}></Stack>
         );

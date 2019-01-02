@@ -14,7 +14,7 @@ import topBar from '@style/topBar.style';
 import Orientation from 'react-native-orientation';
 import DeviceInfo from 'react-native-device-info';
 import config from '@const/config';
-import X5WebView from '@component/X5WebView';
+// import X5WebView from '@component/X5WebView';
 var Dimensions = require('Dimensions');
 var currentWidth = Dimensions.get('window').width;
 var currentHeight = Dimensions.get('window').height;
@@ -108,7 +108,7 @@ export default class Settings extends Component {
                 {
                     Platform.OS == 'android' ?
                         (
-                            <X5WebView
+                            <WebView
                                 ref={'webview'}
                                 automaticallyAdjustContentInsets={true}
                                 style={{

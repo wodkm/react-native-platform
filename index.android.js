@@ -10,6 +10,7 @@ import CodePush from 'react-native-code-push';
 import LoginView from '@view/login/login';
 import ForgetPassword from '@view/login/forgetPassword';
 import Stack from '@view/stack';
+import Home from '@view/home';
 let codePushOptions = {
     checkFrequency: CodePush.CheckFrequency.ON_APP_MANUAL,
     installMode: CodePush.InstallMode.IMMEDIATE
@@ -24,6 +25,9 @@ const MyApp = createStackNavigator({
     },
     ForgetPassword: {
         screen: ForgetPassword
+    },
+    Dev: {
+        screen: Home
     }
 }, {
         initialRouteName: 'LoginView',
